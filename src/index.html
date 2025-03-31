@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数独游戏</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>数独游戏</h1>
+        
+        <div class="controls">
+            <button id="new-game">新游戏</button>
+            <div class="difficulty">
+                <label>难度:</label>
+                <select id="difficulty">
+                    <option value="easy">简单</option>
+                    <option value="medium">中等</option>
+                    <option value="hard">困难</option>
+                </select>
+            </div>
+            <button id="check">检查</button>
+            <button id="hint">提示</button>
+            <button id="solve">解决</button>
+        </div>
+        
+        <div class="timer-container">
+            <div class="timer">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+        
+        <div id="status-message"></div>
+        
+        <div id="board"></div>
+        
+        <div class="number-pad">
+            <button class="number" data-number="1">1</button>
+            <button class="number" data-number="2">2</button>
+            <button class="number" data-number="3">3</button>
+            <button class="number" data-number="4">4</button>
+            <button class="number" data-number="5">5</button>
+            <button class="number" data-number="6">6</button>
+            <button class="number" data-number="7">7</button>
+            <button class="number" data-number="8">8</button>
+            <button class="number" data-number="9">9</button>
+            <button class="number" data-number="0">清除</button>
+        </div>
+    </div>
+    
+    <script src="js/sudoku.js"></script>
+</body>
+</html>
